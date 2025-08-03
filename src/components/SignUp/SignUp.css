@@ -1,0 +1,338 @@
+/* Base Styles */
+.signup-page {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(95, 64, 64);
+  }
+  
+  .signup-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgb(255, 231, 211);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Left Side - Brand Section */
+  .brand-section {
+    background: linear-gradient(135deg, #ff5a5f 0%, #e04a50 100%);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .logo-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .brand-logoo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .logo-icon {
+    font-size: 20rem;
+    color: #ff6347;
+  }
+  
+  .brand-names {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px;
+  }
+  
+  .brand-tagline {
+    margin: 0 0 30px 0;
+    opacity: 0.9;
+    font-size: 1rem;
+  }
+  
+  .benefits-list {
+    text-align: left;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+  }
+  
+  .benefit-item i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Center - Form Section */
+  .form-section {
+    padding: 50px;
+  }
+  
+  .form-header {
+    margin-bottom: 30px;
+  }
+  
+  .form-header h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  .form-header p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #ff5a5f;
+    box-shadow: 0 0 0 3px rgba(255, 90, 95, 0.1);
+  }
+  
+  .form-group input.error {
+    border-color: #e63946;
+  }
+  
+  .error-message {
+    color: #dfb9bc;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 0.9rem;
+  }
+  
+  .checkbox-group label a {
+    color: #ff5a5f;
+    text-decoration: none;
+  }
+  
+  .checkbox-group label a:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-btn {
+    background: linear-gradient(135deg, #ff5a5f 0%, #e04a50 100%);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .signup-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+  
+  .signup-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .login-link a {
+    color: #ff5a5f;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Login */
+  .social-login {
+    margin-top: 30px;
+  }
+  
+  .divider {
+    text-align: center;
+    position: relative;
+    color: #999;
+    font-size: 0.9rem;
+    margin: 20px 0;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #eee;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .social-btn:hover {
+    background: #f9f9f9;
+  }
+  
+  .social-btn.google {
+    color: #db4437;
+  }
+  
+  .social-btn.facebook {
+    color: #4267B2;
+  }
+  
+  .social-btn i {
+    font-size: 1rem;
+  }
+  
+  /* Right Side - Close Section */
+  .close-section {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  .close-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .close-btn:hover {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .signup-container {
+      grid-template-columns: 1fr;
+      max-width: 600px;
+    }
+    
+    .brand-section {
+      display: none;
+    }
+    
+    .close-section {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .form-section {
+      padding: 30px 20px;
+    }
+    
+    .social-buttons {
+      flex-direction: column;
+    }
+  }

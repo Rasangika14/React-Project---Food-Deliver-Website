@@ -1,0 +1,309 @@
+/* MyOrders.css */
+
+/* Base styling for the page */
+.min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f3f4f6;
+  }
+  
+  .py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .max-w-4xl {
+    max-width: 64rem;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .sm\:px-6 {
+    @media (min-width: 640px) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  .lg\:px-8 {
+    @media (min-width: 1024px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  /* Card styling */
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  /* Header section */
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .p-6 {
+    padding: 1.5rem;
+  }
+  
+  .border-b {
+    border-bottom-width: 1px;
+    border-bottom-color: #e5e7eb;
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  
+  .text-yellow-500 {
+    color: #eab308;
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .text-gray-800 {
+    color: #1f2937;
+  }
+  
+  .text-gray-600 {
+    color: #4b5563;
+  }
+  
+  .hover\:text-gray-800:hover {
+    color: #1f2937;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  
+  /* Content section */
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .space-y-4 > * + * {
+    margin-top: 1rem;
+  }
+  
+  /* Order card */
+  .border {
+    border-width: 1px;
+    border-color: #e5e7eb;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .hover\:shadow-md:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .transition-shadow {
+    transition-property: box-shadow;
+    transition-duration: 150 Thicknesms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .font-medium {
+    font-weight: 500;
+  }
+  
+  .px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  .text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  
+  /* Status colors */
+  .bg-yellow-100 {
+    background-color: #fefcbf;
+  }
+  
+  .text-yellow-800 {
+    color: #92400e;
+  }
+  
+  .bg-blue-100 {
+    background-color: #dbeafe;
+  }
+  
+  .text-blue-800 {
+    color: #1e40af;
+  }
+  
+  .bg-purple-100 {
+    background-color: #ede9fe;
+  }
+  
+  .text-purple-800 {
+    color: #5b21b6;
+  }
+  
+  .bg-green-100 {
+    background-color: #d1fae5;
+  }
+  
+  .text-green-800 {
+    color: #065f46;
+  }
+  
+  .bg-red-100 {
+    background-color: #fee2e2;
+  }
+  
+  .text-red-800 {
+    color: #991b1b;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f3f4f6;
+  }
+  
+  /* Toggle button */
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .text-blue-600 {
+    color: #2563eb;
+  }
+  
+  .hover\:text-blue-800:hover {
+    color: #1e40af;
+  }
+  
+  .ml-1 {
+    margin-left: 0.25rem;
+  }
+  
+  /* Order details */
+  .border-t {
+    border-top-width: 1px;
+    border-top-color: #e5e7eb;
+  }
+  
+  .pt-4 {
+    padding-top: 1rem;
+  }
+  
+  .text-gray-700 {
+    color: #374151;
+  }
+  
+  /* Order items */
+  .gap-4 {
+    gap: 1rem;
+  }
+  
+  .w-16 {
+    width: 4rem;
+  }
+  
+  .h-16 {
+    height: 4rem;
+  }
+  
+  .object-cover {
+    object-fit: cover;
+  }
+  
+  /* Error message */
+  .bg-red-100 {
+    background-color: #fee2e2;
+  }
+  
+  .text-red-800 {
+    color: #991b1b;
+  }
